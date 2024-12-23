@@ -1,0 +1,84 @@
+:root {
+    --background: ;
+    --text: ;
+    --accent: ;
+}
+body {
+    background-color: ;
+}
+
+header {
+    text-align: ;
+}
+
+header p {
+    color: ;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    border: ;
+    min-width: ;
+    width: ;
+    margin: ;
+    user-select: ;
+}
+
+h1, h2, .card p {
+    color: ;
+}
+
+.card h2 {
+    position: relative;
+    margin: 15px auto 0 auto;
+    z-index: 2;
+    background-color: ;
+    border: 2px solid var();
+    width: 70%;
+}
+
+.card h2, .card p {
+    text-align: center;
+}
+
+pre {
+    margin: ;
+    padding: ;
+    background-image:  linear-gradient();
+    color: ;
+}
+
+.card h2, .card pre {
+    border-radius: ;
+    transition: ;
+}
+
+.card:hover h2, .card:hover pre {
+    box-shadow: inset 0px 0px 8px orange;
+}
+
+pre {
+    user-select: all;
+}
+
+footer {
+    text-align: center;
+    font-size: 24px;
+    color: var();
+}
+
+@media screen and (max-width: 991px) {
+    .card {
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .card {
+        width: 100%;
+    }
+}
