@@ -2,73 +2,106 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name= "viewport" content= "width-device-width, initial scale=1.0"
-    <link rel="styleshett" href="./assets/style.css">
+    <meta name= "viewport" content= "width=device-width, initial-scale=1.0" />
     <title>CSS Snippet Cheat Sheet</title>
+    <link rel="stylesheet" href="./assets/reset.css" />
+    <link rel="stylesheet" href="./assets/style.css" />
+
 </head>
 <body>
     <header>
-        <h1>CSS Snippet Cheat Sheet</h1>
+        <h1 class="page-title">CSS Snippet Cheat Sheet</h1>
         <p>If you ever had issues recalling the exact syntax for CSS code, use this sheet! Each box has a sample code to copy and paste for future projects.</p>
     </header>
     <main>
-        <section>
-            <article>
-                <h2></h2>
-                <p></p>
-<pre>
+        <section class="row justify-center">
+            <div class="card-column">
+                <figure class="card code-card">
+                    <h2 class="card-header">Flexbox Row</h2>
+                    <div class="card-body">
+                        <p>Use these three properties to creat a Flexbox row layout.</p>
+                    </div>
+                    <pre class="code-block"> <code>.row {
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+}</code></pre>
+                </figure>
+            </div>
+            <div class="card-column">
+                <figure class="card code-card">
+                    <h2 class="card-header">Flexbox Column</h2>
+                    <div class="card-body">
+                        <p>Use this to create a Flexbox column layout.</p>
+                    </div>
+                    <pre class="code-block"> <code>.column {
+display: flex;
+flex-direction: column;
+}</code></pre>
+                </figure>
+            </div> 
+            <div class="card-column">
+                <figure class="card code-card">
+                    <h2 class="card-header">Linear Gradients</h2>
+                    <div class="card-body">
+                        <p>This will creat a background linear gradient from top to bottom.</p>
+                    </div>
+                    <pre class="code-block"> <code>.liner-gradient-background {
+background-image: linear-gradient(
+  rgba(232, 102, 236, 0.3) 0%,
+  rgba(232, 102, 236, 0.6) 100%
+);
+}</code></pre>
+                </figure>
+            </div>
+            <div class="card-column">
+                <figure class="card code-card">
+                    <h2 class="card-header">CSS Grid Layout</h2>
+                    <div class="card-body">
+                        <p>Use a 12-column layout using CSS Grid.</p>
+                    </div>
+                    <pre class="code-block"> <code>.grid {
+display: grid;
+width: 100%;
+grid-template-columns: repeat(12, 1fr);                        
+}</code></pre>
+                </figure>
+            </div>
+            <div class="card-column">
+                <figure class="card code-card">
+                    <h2 class="card-header">Box Transition Glow</h2>
+                    <div class="card-body">
+                        <p>Use transition and box shadows to glow on hover.</p>
+                    </div>
+                    <pre class="code-block"> <code>.code-card .card-header {
+border-radius: 8px;
+transition: all 0.5s ease-in-out;
+}
 
-</pre>                
-            </article>
-        </section>
-        <section>
-            <article>
-                <h2></h2>
-                <p></p>
-<pre>
-
-</pre>                
-            </article>
-        </section>
-        <section>
-            <article>
-                <h2></h2>
-                <p></p>
-<pre>
-
-</pre>                
-            </article>
-        </section>
-        <section>
-            <article>
-                <h2></h2>
-                <p></p>
-<pre>
-
-</pre>                
-            </article>
-        </section>
-        <section>
-            <article>
-                <h2></h2>
-                <p></p>
-<pre>
-
-</pre>                
-            </article>
-        </section>
-        <section>
-            <article>
-                <h2></h2>
-                <p></p>
-<pre>
-
-</pre>                
-            </article>
+.cord-card:hover,
+.code-card:hover .card-header {
+  box-shadow: inset 0 px 0px 8ps rgba(232, 102, 236, 1), 0 0 15px rgba(232, 102, 236, 1);
+}</code></pre>
+                </figure>
+            </div>
+            <div class="card-column">
+                <figure class="card code-card">
+                    <h2 class="card-header">Overlay Card with Title</h2>
+                    <div class="card-body">
+                        <p>Use position properties and negative margins to raise elements higher than their natural starting point.</p>
+                    </div>
+                    <pre class="code-block"> <code>.card-header {
+position: relative;
+margin-top: -20px;
+}</code></pre>
+                </figure>
+            </div>
         </section>
     </main>
 
-    <footer></footer>
+    <footer>
+        <h3>Made with <span role="img" aria-label="heart">❤️</span> and CSS by Danny with the help of some starter code.</h3>
+    </footer>
 </body>
 
 </html>

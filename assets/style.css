@@ -1,8 +1,11 @@
 :root {
-    --background: rgb(14, 82, 82);
-    --text: rgb(255, 104,104);
-    --accent: white;
+    --outer-space: #33393f;
+    --bright: #2aefcb;
+    --vodka: #e0eae4;
+    --heliosphere: #e866ec;
 }
+
+
 body {
     background-color: var(--background);
 }
